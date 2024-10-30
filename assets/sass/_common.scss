@@ -1,0 +1,38 @@
+@mixin placeholder($color) {
+  &::placeholder {
+    color: $color;
+  }
+
+  // IE
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  // Edge
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+}
+#cflg-setting {
+  input[type="text"] {
+    @include placeholder(#ccc);
+  }
+}
+
+@keyframes cflg-highlight {
+  0% {
+    background: #fff;
+  }
+  10% {
+    background: #fdfd96;
+  }
+  80% {
+    background: #fdfd96;
+  }
+  100% {
+    background: #fff;
+  }
+}
+.cflg-highlight {
+  animation: cflg-highlight 2s ease 0.4s;
+}

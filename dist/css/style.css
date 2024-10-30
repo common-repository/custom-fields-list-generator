@@ -1,0 +1,54 @@
+#cflg-setting input[type="text"]::placeholder {
+  color: #ccc;
+}
+
+#cflg-setting input[type="text"]:-ms-input-placeholder {
+  color: #ccc;
+}
+
+#cflg-setting input[type="text"]::-ms-input-placeholder {
+  color: #ccc;
+}
+
+@keyframes cflg-highlight {
+  0% {
+    background: #fff;
+  }
+  10% {
+    background: #fdfd96;
+  }
+  80% {
+    background: #fdfd96;
+  }
+  100% {
+    background: #fff;
+  }
+}
+
+.cflg-highlight {
+  animation: cflg-highlight 2s ease 0.4s;
+}
+
+#cflg {
+  padding: 15px;
+}
+
+#cflg ul {
+  margin: 0;
+}
+
+#cflg ul li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+#cflg ul li#cflg-top svg {
+  position: relative;
+  top: 3px;
+  left: -4px;
+}
+
+#cflg ul li a {
+  font-size: 14px;
+  text-decoration: none;
+}

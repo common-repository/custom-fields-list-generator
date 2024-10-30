@@ -1,0 +1,24 @@
+@import "common";
+
+#cflg {
+  padding: 15px;
+  ul {
+    margin: 0;
+    li {
+      padding-left: 1em;
+      text-indent: -1em;
+      &#cflg-top {
+        svg {
+          position: relative;
+          top: 3px;
+          left: -4px;
+        }
+      }
+      a {
+        font-size: 14px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+

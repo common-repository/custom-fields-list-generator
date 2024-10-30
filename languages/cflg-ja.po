@@ -1,0 +1,55 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Fields List Generator\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2019-07-25 15:51+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: add more Corp,Inc. Corp,Inc. <info@add-more.co.jp>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: esc_attr_e;esc_attr__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-SearchPath-0: cflg.php\n"
+
+#: cflg.php:50
+msgid "Settings"
+msgstr "設定"
+
+#: cflg.php:64 cflg.php:76
+msgid "Settings of Custom Fields List Generator"
+msgstr "Custom Fields List Generatorの設定"
+
+#: cflg.php:65
+msgid "Custom Fields List Generator"
+msgstr "Custom Fields List Generator"
+
+#: cflg.php:77
+msgid "The custom fields list is displayed on the target page with a check."
+msgstr ""
+"チェックが付いている対象ページにカスタムフィールドリストが表示されます。"
+
+#: cflg.php:77
+msgid ""
+"You can hide the custom fields list every post if you input post id "
+"separated by comma in textarea."
+msgstr ""
+"テキストエリアに投稿IDをカンマ区切りで入力すれば、記事ごとにカスタムフィー"
+"ルドリストを非表示にすることができます。"
+
+#: cflg.php:122
+msgid "Target Page"
+msgstr "表示対象ページ"
+
+#: cflg.php:156
+msgid "Post ID you want to hide the custom fields list"
+msgstr "カスタムフィールドリストを非表示にしたい投稿ID"

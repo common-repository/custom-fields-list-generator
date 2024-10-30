@@ -1,0 +1,135 @@
+#cflg-setting input[type="text"]::placeholder {
+  color: #ccc;
+}
+
+#cflg-setting input[type="text"]:-ms-input-placeholder {
+  color: #ccc;
+}
+
+#cflg-setting input[type="text"]::-ms-input-placeholder {
+  color: #ccc;
+}
+
+@keyframes cflg-highlight {
+  0% {
+    background: #fff;
+  }
+  10% {
+    background: #fdfd96;
+  }
+  80% {
+    background: #fdfd96;
+  }
+  100% {
+    background: #fff;
+  }
+}
+
+.cflg-highlight {
+  animation: cflg-highlight 2s ease 0.4s;
+}
+
+#cflg-classic .cflg-switch {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 2000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0085ba;
+  cursor: pointer;
+  transition: 0.4s ease background;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+}
+
+#cflg-classic .cflg-switch:hover {
+  background: #008ec2;
+}
+
+#cflg-classic .cflg-switch.active + .cflg-menu {
+  transform: scale(1);
+}
+
+#cflg-classic .cflg-switch.active ~ .cflg-triangle {
+  transform: scale(1);
+}
+
+#cflg-classic .cflg-switch.active svg.open {
+  display: none;
+}
+
+#cflg-classic .cflg-switch.active svg.close {
+  display: block;
+}
+
+#cflg-classic .cflg-switch svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cflg-classic .cflg-switch svg.open {
+  display: block;
+}
+
+#cflg-classic .cflg-switch svg.close {
+  display: none;
+}
+
+#cflg-classic .cflg-menu {
+  transition: 0.2s ease-in transform;
+  transform-origin: 100% 100%;
+  transform: scale(0);
+  position: fixed;
+  bottom: 100px;
+  right: 60px;
+  z-index: 2000;
+  width: 230px;
+  max-height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  overflow: auto;
+}
+
+#cflg-classic .cflg-menu ul {
+  margin: 0;
+}
+
+#cflg-classic .cflg-menu ul li {
+  margin-bottom: 5px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+#cflg-classic .cflg-menu ul li#cflg-top svg {
+  position: relative;
+  top: 3px;
+  left: -4px;
+}
+
+#cflg-classic .cflg-menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+#cflg-classic .cflg-menu ul li a {
+  text-decoration: none;
+}
+
+#cflg-classic .cflg-triangle {
+  transition: 0.2s ease-in transform;
+  transform-origin: 100% 0%;
+  transform: scale(0);
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  z-index: 2001;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent #ffffff transparent transparent;
+}

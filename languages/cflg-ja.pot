@@ -1,0 +1,70 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Fields "
+"List Generator\n"
+"POT-Creation-Date: 2019-07-25 "
+"15:32+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your Name "
+"<you@example.com>\n"
+"Language-Team: add more Corp,Inc. "
+"Corp,Inc. <info@add-more.co.jp>\n"
+"Report-Msgid-Bugs-To: Translator "
+"Name <translations@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; "
+"charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; "
+"plural=n != 1;\n"
+"X-Textdomain-Support: yesX-"
+"Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: esc_attr_e;"
+"esc_attr__\n"
+"X-Poedit-Basepath: ..\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-SearchPath-0: cflg.php\n"
+
+#: cflg.php:50
+msgid "Settings"
+msgstr ""
+
+#: cflg.php:64 cflg.php:76
+msgid ""
+"Settings of Custom Fields List "
+"Generator"
+msgstr ""
+
+#: cflg.php:65
+msgid "Custom Fields List Generator"
+msgstr ""
+
+#: cflg.php:77
+msgid ""
+"The custom fields list is "
+"displayed on the target page with "
+"a check."
+msgstr ""
+
+#: cflg.php:77
+msgid ""
+"You can hide the custom fields "
+"list every post if you input post "
+"id in textarea."
+msgstr ""
+
+#: cflg.php:122
+msgid "Target Page"
+msgstr ""
+
+#: cflg.php:156
+msgid ""
+"Post ID you want to hide the "
+"custom fields list"
+msgstr ""

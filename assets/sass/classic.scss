@@ -1,0 +1,99 @@
+@import "common";
+
+#cflg-classic {
+  .cflg-switch {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 2000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0085ba;
+    cursor: pointer;
+    transition: 0.4s ease background;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    &:hover {
+      background: #008ec2;
+    }
+    &.active {
+      & + .cflg-menu {
+        transform: scale(1);
+      }
+      & ~ .cflg-triangle {
+        transform: scale(1);
+      }
+      svg {
+        &.open {
+          display: none;
+        }
+        &.close {
+          display: block;
+        }
+      }
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &.open {
+        display: block;
+      }
+      &.close {
+        display: none;
+      }
+    }
+  }
+  .cflg-menu {
+    transition: 0.2s ease-in transform;
+    transform-origin: 100% 100%;
+    transform: scale(0);
+    position: fixed;
+    bottom: 100px;
+    right: 60px;
+    z-index: 2000;
+    width: 230px;
+    max-height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    overflow: auto;
+    ul {
+      margin: 0;
+      li {
+        margin-bottom: 5px;
+        padding-left: 1em;
+        text-indent: -1em;
+        &#cflg-top {
+          svg {
+            position: relative;
+            top: 3px;
+            left: -4px;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .cflg-triangle {
+    transition: 0.2s ease-in transform;
+    transform-origin: 100% 0%;
+    transform: scale(0);
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    z-index: 2001;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #ffffff transparent transparent;
+  }
+}
